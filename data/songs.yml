@@ -1,0 +1,499 @@
+
+
+old_macdonald:
+  title: Old MacDonald
+  direction: ltr
+  song: |
+    Old MacDonald had a farm,
+    Ee i ee i oh!
+    And on that farm he had some chickens,
+    Ee i ee i oh!
+    With a cluck-cluck here,
+    And a cluck-cluck there
+
+    Here a cluck, there a cluck,
+    Everywhere a cluck-cluck
+    Old MacDonald had a farm
+    Ee i ee i oh!
+
+    Old MacDonald had a farm,
+    Ee i ee i oh!
+    And on that farm he had some dogs,
+    Ee i ee i oh!
+    With a woof-woof here,
+
+    And a woof-woof-woof there
+    Here a woof, there a woof,
+    Everywhere a woof-woof
+    Old MacDonald had a farm
+    Ee i ee i oh!
+
+    Old MacDonald had a farm,
+    Ee i ee i oh!
+    And on that farm he had some turkeys,
+    Ee i ee i oh!
+
+    With a gobble-gobble gobble-gobble here,
+    And a gobble-gobble gobble-gobble there
+    Here a gobble-gobble, there a gobble-gobble,
+    Everywhere a gobble-gobble-gobble
+    Old MacDonald had a farm
+    Ee i ee i oh!
+
+    Old MacDonald had a farm,
+    Ee i ee i oh!
+    And on that farm he had some cows,
+    Ee i ee i oh!
+    With a moo-moo here,
+    And a moo-moo there
+    Here a moo, there a moo,
+    Everywhere a moo-ooo
+    Old MacDonald had a farm,
+    Ee i ee i oh!
+
+  dictionary: 
+    chickens: "עופות"
+    cluck: "קירקור"
+    cows: "פרות"
+    dogs: "כלבים"
+    everywhere: "מקום"
+    farm: "חווה"
+    gobble: "גירגור"
+    he: ""
+    here: "כאן"
+    macdonald: "מקדונלד"
+    moo: "מו"
+    oh: "הו"
+    old: "זקן"
+    some: "כמה"
+    that: "ש"
+    there: "שם"
+    turkeys: "תרנגולי הודו"
+    with: "עם"
+    woof: "האו"
+
+
+
+chad_gadia:
+    direction: rtl
+    title: חד גדיא
+    song: |
+        חַד גַּדְיָא, חַד גַּדְיָא:
+        דְּזַבִּין אַבָּא בִּתְרֵי זוּזֵי. 
+        חַד גַּדְיָא, חַד גַּדְיָא:
+
+        וְאָתָא שׁוּנְרָא, וְאָכְלָה לְגַּדְיָא, דְּזַבִּין אַבָּא בִּתְרֵי זוּזֵי. 
+        חַד גַּדְיָא, חַד גַּדְיָא:
+
+        וְאָתָא כַלְבָּא, וְנָשַׁךְ לְשׁוּנְרָא, דְּאָכְלָה לְגַּדְיָא, דְּזַבִּין אַבָּא בִּתְרֵי זוּזֵי. 
+        חַד גַּדְיָא, חַד גַּדְיָא:
+
+        וְאָתָא חוּטְרָא, וְהִכָּה לְכַלְבָּא, דְּנָשַׁךְ לְשׁוּנְרָא, דְּאָכְלָה לְגַּדְיָא, דְּזַבִּין אַבָּא בִּתְרֵי זוּזֵי. 
+        חַד גַּדְיָא, חַד גַּדְיָא:
+
+        וְאָתָא נוּרָא, וְשָׂרַף לְחוּטְרָא, דְּהִכָּה לְכַלְבָּא, דְּנָשַׁךְ לְשׁוּנְרָא, דְּאָכְלָה לְגַּדְיָא, דְּזַבִּין אַבָּא בִּתְרֵי זוּזֵי. 
+        חַד גַּדְיָא, חַד גַּדְיָא:
+
+        וְאָתָא מַיָּא, וְכָבָה לְנוּרָא, דְּשָׂרַף לְחוּטְרָא, דְּהִכָּה לְכַלְבָּא, דְּנָשַׁךְ לְשׁוּנְרָא, דְּאָכְלָה לְגַּדְיָא, דְּזַבִּין אַבָּא בִּתְרֵי זוּזֵי. 
+        חַד גַּדְיָא, חַד גַּדְיָא:
+
+        וְאָתָא תוֹרָא, וְשָׁתָה לְמַיָּא, דְּכָבָה לְנוּרָא, דְּשָׂרַף לְחוּטְרָא, דְּהִכָּה לְכַלְבָּא, דְּנָשַׁךְ לְשׁוּנְרָא, דְּאָכְלָה לְגַּדְיָא, דְּזַבִּין אַבָּא בִּתְרֵי זוּזֵי. 
+        חַד גַּדְיָא, חַד גַּדְיָא:
+
+        וְאָתָא הַשּׁוֹחֵט, וְשָׁחַט לְתוֹרָא, דְּשָׁתָה לְמַיָּא, דְּכָבָה לְנוּרָא, דְּשָׂרַף לְחוּטְרָא, דְּהִכָּה לְכַלְבָּא, דְּנָשַׁךְ לְשׁוּנְרָא, דְּאָכְלָה לְגַּדְיָא, דְּזַבִּין אַבָּא בִּתְרֵי זוּזֵי. 
+        חַד גַּדְיָא, חַד גַּדְיָא:
+
+        וְאָתָא מַלְאַךְ הַמָּוֶת, וְשָׁחַט לְשׁוֹחֵט, דְּשָׁחַט לְתוֹרָא, דְּשָׁתָה לְמַיָּא, דְּכָבָה לְנוּרָא, דְּשָׂרַף לְחוּטְרָא, דְּהִכָּה לְכַלְבָּא, דְּנָשַׁךְ לְשׁוּנְרָא, דְּאָכְלָה לְגַּדְיָא, דְּזַבִּין אַבָּא בִּתְרֵי זוּזֵי. 
+        חַד גַּדְיָא, חַד גַּדְיָא:
+
+        וְאָתָא הַקָּדוֹשׁ בָּרוּךְ הוּא, וְשָׁחַט לְמַלְאַךְ הַמָּוֶת, דְּשָׁחַט לְשׁוֹחֵט, דְּשָׁחַט לְתוֹרָא, דְּשָׁתָה לְמַיָּא, דְּכָבָה לְנוּרָא, דְּשָׂרַף לְחוּטְרָא, דְּהִכָּה לְכַלְבָּא, דְּנָשַׁךְ לְשׁוּנְרָא, דְּאָכְלָה לְגַּדְיָא, דְּזַבִּין אַבָּא בִּתְרֵי זוּזֵי. 
+        חַד גַּדְיָא, חַד גַּדְיָא:
+
+    dictionary: 
+      חַד: "אחד"
+      גַדְיָא: "גדי"
+      דְזָבִין: "שקנה"
+      בִּתְרֵי: "בשני"
+      זוּזִי: "זוזים"
+      וְאָתָא: ובא
+      שׁוּנְרָא: החתול
+      וְאָכְלָה: ואכל
+      כַלְבָּא: הכלב
+      וְנָשַׁךְ: ונשך
+      חוּטְרָא: המקל
+      נוּרָא: האש
+      מַיָּא: המים
+      תוֹרָא: שור
+      הַקָּדוֹשׁ: הקדוש
+      בָּרוּךְ: ברוך
+      וְשָׁחַט: והרג
+      לְמַלְאַךְ: את מלאך
+      הַמָוֶת: המוות
+      דְשָחַט: שהרג
+      לַשּׁוֹחֵט: את השוחט
+      דְשָחַט: ששחט
+      לְתוֹרָא: את השור
+      דְשָתָה: ששתה
+      לְמַיָא: את המים
+      דְכָבָא: שכיבו
+      לְנוּרָא: את האש
+      דְשָרַף: ששרפה
+      לְחוּטְרָא: את המקל
+      דְהִכָה: שהכה
+      לְכַלְבָא: את הכלב
+      דְנָשַך: שנשך
+      לְשׁוּנְרָא: את החתול
+      דְאָכְלָה: שאכל
+      לְגַדְיָא: את הגדי
+
+
+
+my_bonnie_lies_over_the_ocean:
+  title: My Bonnie Lies Over The ocean
+  direction: ltr
+  song: |
+    My Bonnie lies over the ocean
+    My Bonnie lies over the sea
+    My Bonnie lies over the ocean
+    Please bring back my Bonnie to me
+
+    Bring back, bring back
+    Oh bring back my Bonnie to me, to me
+    Bring back, bring back
+    Oh bring back my Bonnie to me
+
+    Oh blow ye winds over the ocean
+    Oh blow ye winds over the sea
+    Oh blow ye winds over the ocean
+    And bring back my Bonnie to me.
+
+    Bring back, bring back
+    Oh bring back my Bonnie to me, to me
+    Bring back, bring back
+    Oh bring back my Bonnie to me
+
+    The winds have blown over the ocean
+    The winds have blown over the sea
+    The winds have blown over the ocean
+    And brought back my Bonnie to me.
+
+    Bring back, bring back
+    Oh bring back my Bonnie to me, to me
+    Bring back, bring back
+    Oh bring back my Bonnie to me
+
+  dictionary:
+    back: "חזרה"
+    blow: "לנשוב"
+    blown: "נשבו"
+    bonnie: "בוני"
+    bring: "הביאו"
+    brought: "הביאו"
+    have: "יש"
+    lies: "שוכן"
+    me: ""
+    my: "שלי"
+    ocean: "אוקיינוס"
+    oh: "אוי"
+    over: "מעל"
+    please: "בבקשה"
+    sea: "ים"
+    the: ""
+    winds: "רוחות"
+    ye: "אתם"  
+
+    
+
+billy_boy:
+  title: Billy Boy
+  direction: ltr
+  song: |
+    Oh where have you been, Billy Boy,
+    Billy Boy?
+    Oh where have you been, charming Billy?
+    I have been to seek a wife,
+    She's the joy of my life,
+    She's a young thing
+    And cannot leave her mother.
+
+    Did she bid you to come in, Billy Boy,
+    Billy Boy?
+    Did she bid you to come in, tell me Billy?
+    Yes, she bade me to come in,
+    There's a dimple in her chin.
+    She's a young thing
+    And cannot leave her mother.
+
+    Did she set you a chair, Billy Boy?
+    Billy Boy?
+    Did she set you a chair, tell me Billy.
+    Yes, she set for me a chair,
+    She has ringlets in her hair,
+    She's a young thing
+    And cannot leave her mother.
+
+    Can she bake cherry pie, Billy Boy,
+    Billy Boy?
+    Can she bake cherry pie, tell me Billy.
+    She can bake a cherry pie,
+    There's a twinkle in her eye.
+    She's a young thing
+    And cannot leave her mother.
+
+  dictionary:
+    bade: "הציע"
+    bake: "לאפות"
+    been: "היה"
+    bid: "הצעה"
+    billy: "בילי"
+    boy: "ילד"
+    can: "יכול"
+    cannot: "לא יכול"
+    chair: ""
+    charming: "מקסים"
+    cherry: "דובדבן"
+    chin: "סנטר"
+    come: "בוא"
+    did: "האם"
+    dimple: "גומה"
+    eye: "עין להגדיר"
+    for: "ל"
+    hair: "שיער"
+    has: "יש"
+    her: ""
+    joy: "שמחה"
+    leave: "להשאיר"
+    life: "חיים"
+    me: ""
+    mother: "אמא"
+    my: "שלי"
+    oh: "הו"
+    pie: "עוגה"
+    ringlets: "תלתלים"
+    seek: "מחפש"
+    set: "כיסא"
+    she: ""
+    she's: "היא"
+    tell: "לספר"
+    the: ""
+    there's: "יש"
+    thing: "דבר"
+    twinkle: "קריצה"
+    where: "איפה"
+    wife: "אישה"
+    yes: "כן"
+    you: "אתה"
+    young: "צעיר"  
+
+five_little_chickadees:
+  direction: ltr
+  title: Five little chickadees
+  song:  |
+    Five little chickadees
+    Peeping at the door
+    One flew away 
+    And then there were four
+
+    Chickadee, chickadee, happy today
+    Chickadee, chickadee, fly away
+
+    Four little chickadees 
+    Sitting on a tree
+    One flew away 
+    And then there were three
+
+    Chickadee, chickadee, happy today
+    Chickadee, chickadee, fly away
+
+    Three little chickadees
+    Looking at you
+    One flew away
+    And then there were two
+
+    Chickadee, chickadee, happy today
+    Chickadee, chickadee, fly away
+
+    Two little chickadees
+    Sitting in the sun
+    One flew away 
+    And then there was one
+
+    Chickadee, chickadee, happy today
+    Chickadee, chickadee, fly away
+
+    One little chickadee
+    Left all alone
+    It flew away 
+    And then there were none
+
+    Chickadee, chickadee, happy today
+    Chickadee, chickadee, fly away
+
+  dictionary:
+    all: "כולו"
+    alone: "לבד"
+    away: "שם"
+    chickadees: "דרורים"
+    door: "דלת"
+    five: "חמש"
+    flew: "טס"
+    fly: "עף"
+    four: "ארבע"
+    happy: "שמח"
+    it: "זה"
+    left: "נשאר"
+    little: "קטן"
+    looking: "מסתכל"
+    none: "לא"
+    one: "אחד"
+    peeping: "מציצים"
+    sitting: "יושב"
+    sun: "שמש"
+    the: ""
+    then: "אז"
+    there: "יש"
+    three: "שלוש"
+    today: "היום"
+    tree: "עץ"
+    two: "שתי"
+    was: "היה"
+    were: "היו"
+    you: "אתה"
+
+five_little_ducks:
+  direction: ltr
+  title: Five Little Ducks
+  song: |
+    Five little ducks
+    Went out one day
+    Over the hill and far away
+    Mother duck said
+    "Quack, quack, quack, quack."
+    But only four little ducks came back.
+
+    Four little ducks
+    Went out one day
+    Over the hill and far away
+    Mother duck said
+    "Quack, quack, quack, quack."
+    But only three little ducks came back.
+
+    Three little ducks
+    Went out one day
+    Over the hill and far away
+    Mother duck said
+    "Quack, quack, quack, quack."
+    But only two little ducks came back.
+
+    Two little ducks
+    Went out one day
+    Over the hill and far away
+    Mother duck said
+    "Quack, quack, quack, quack."
+    But only one little duck came back.
+
+    One little duck
+    Went out one day
+    Over the hill and far away
+    Mother duck said
+    "Quack, quack, quack, quack."
+    But none of the five little ducks came back.
+
+    Sad mother duck
+    Went out one day
+    Over the hill and far away
+    The sad mother duck said
+    "Quack, quack, quack."
+    And all of the five little ducks came back.
+  dictionary:
+    all: "כל"
+    back: "חזרה"
+    but: "אבל"
+    came: "הגיע"
+    day: "יום"
+    duck: "ברווז"
+    ducks: "ברווזים"
+    far: "רחוק"
+    five: "חמש"
+    four: "ארבע"
+    hill: "גבעה"
+    little: "קטן"
+    mother: "אמא"
+    none: "אף"
+    one: "אחד"
+    only: "רק"
+    out: "החוצה"
+    over: "מעל"
+    quack: "קוואק"
+    sad: ""
+    said: "אמר"
+    the: ""
+    three: "שלוש"
+    two: "שתי"
+    went: "הלך" 
+
+if_youre_happy_and_you_know_it:
+  title: If You're Happy And You Know It
+  direction: ltr
+  song: |
+    If you’re happy and you know it
+    Clap your hands (clap, clap)
+    If you’re happy and you know it
+    Clap your hands (clap, clap)
+    If you’re happy and you know it
+    Then your face will surely show it
+    If you’re happy and you know it
+    Clap your hands
+
+    If you’re happy and you know it
+    Shake a hand (hey friend)
+    If you’re happy and you know it
+    Shake a hand (hey friend)
+    If you’re happy and you know it
+    Then your face will surely show it
+    If you’re happy and you know it
+    Shake a hand
+
+    If you’re happy and you know it
+    Give a smile (hee-hee)
+    If you’re happy and you know it
+    Give a smile (hee-hee)
+    If you’re happy and you know it
+    Then your face will surely show it
+    If you’re happy and you know it
+    Give a smile
+
+    If you’re happy and you know it
+    Clap your hands (clap, clap)
+    If you’re happy and you know it
+    Shake a hand (hey friend)
+    If you’re happy and you know it
+    Then your face will surely show it
+    If you’re happy and you know it
+    Give a smile
+    If you’re happy and you know it
+    Then your face will surely show it
+    If you’re happy and you know it
+    Give a smile
+
+  dictionary:
+    clap: "למחוא"
+    face: "פנים"
+    friend: "חבר"
+    give: "לתת"
+    hand: "יד"
+    hands: "ידי"
+    happy: "שמח"
+    hee: "הי"
+    hey: "היי"
+    if: "אם"
+    it: "זה"
+    know: "יודע"
+    shake: "להרעיד"
+    show: "להראות"
+    smile: "חיוך"
+    surely: "בוודאי"
+    then: "אז"
+    you: "אתה"
+    your: ""
+    you’re: "אתה" 

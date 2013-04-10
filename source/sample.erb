@@ -1,0 +1,31 @@
+---
+title: Old MacDonald
+---
+
+<div id="container"></div>
+
+<%= javascript_include_tag  "http://code.jquery.com/jquery-1.9.1.min.js" %>
+<script src="javascripts/smarty/smarty.js"></script>
+<script src="javascripts/smarty/utils.js"></script>
+<script src="javascripts/word_editor.js"></script>
+<script src="javascripts/app.js"></script>
+
+<script>
+
+  app.init();
+
+  $.getJSON('songs/old_macdonald.json', function(song) {
+    app.load({
+        'title': song.title,
+        'source': song.song,
+        'dictionary': song.dictionary,
+        'direction': song.direction,
+        'editDictionary': false
+      });
+
+  })
+  .success(function() {  })
+  .error(function() {  })
+  .complete(function() {  });
+
+</script>

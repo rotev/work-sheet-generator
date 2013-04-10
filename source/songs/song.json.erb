@@ -1,0 +1,25 @@
+<%
+	if defined? song
+		verses = song.song.split("\n\n")
+		songString = ""
+		verses.each do |verse|
+			lines = verse.split("\n")
+			lines.each do |line|
+				songString += line + '\n'
+			end
+			songString += '\n'
+		end
+		%>
+
+			{
+				"title": "<%= song.title %>",
+				"key": "<%= songKey %>",
+				"song": "<%= songString.gsub('"', ' &quot; ') %>",
+				"dictionary": <%= song.dictionary.to_json%>,
+				"direction": "<%= song.direction %>"
+			}
+
+		<%
+
+	end
+%>

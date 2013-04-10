@@ -1,0 +1,472 @@
+@import 'compass';
+@import 'compass/css3';
+@import 'compass/reset';
+
+@font-face {
+    font-family: 'Alef';
+    src: url('Alef-Bold.eot');
+    src: url('Alef-Bold.eot?#iefix') format('embedded-opentype'),
+         url('Alef-Bold.woff') format('woff'),
+         url('Alef-Bold.ttf') format('truetype'),
+         url('Alef-Bold.svg#alefbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Alef';
+    src: url('Alef-Regular.eot');
+    src: url('Alef-Regular.eot?#iefix') format('embedded-opentype'),
+         url('Alef-Regular.woff') format('woff'),
+         url('Alef-Regular.ttf') format('truetype'),
+         url('Alef-Regular.svg#alefregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, table, td {
+  direction: rtl;
+  text-align: right;
+  font-size: 10pt;
+  font-family: 'Alef', "Arial","Arial (Hebrew)";
+  font-weight: normal;
+}
+
+textarea, input {
+  background: transparent;
+  border: 1px solid #444;
+  font-family: 'Alef', "Arial","Arial (Hebrew)";
+  @include transition(all 0.2s);
+  @include border-radius(4px);
+
+  &:focus {
+    @include box-shadow(0 0 4px #444);
+  }
+}
+
+button { 
+  font-family: 'Alef', "Arial","Arial (Hebrew)"; 
+  cursor: pointer;
+}
+
+textarea { padding: 0.5em; }
+input { padding: 0.3em 0.5em; }
+
+body {
+  overflow-y: scroll;
+}
+
+h1 {
+  text-align: right;
+  font-size: 200%;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+#container {
+
+  float: left;
+  width: 45%;
+  margin: 40px 0 40px 40px;
+
+  & > h1 {
+    border-bottom: 2px solid #555;
+    padding-bottom: 0.5em;
+
+    .name {
+      float: left;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 34px;
+      i {
+        width: 200px;
+        border-bottom: 1px solid #555;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+// handle song direction.
+@mixin song_dir($dir) {
+
+  #container > table > tbody > tr > td:first-child,
+  #title, #song {
+    direction: $dir;
+
+    @if $dir == rtl {
+      text-align: right;
+    } @else {
+      text-align: left;
+    }
+  }
+}
+
+.song-dir-rtl { @include song_dir(rtl); }
+.song-dir-ltr { @include song_dir(ltr); }
+
+// sample song page.
+.sample {
+  @include song_dir(ltr);
+  #container { 
+    width: 100%; margin: 0; padding: 1em; @include box-sizing(border-box); 
+  }
+}
+
+$border: 0.1em solid #ccc;
+$wordEditorBackground: url(../images/az_subtle.png);
+
+@mixin words {  
+    text-align: center;
+/*
+    article {
+      display: inline-block;
+      border: 1px solid #555;
+      margin: 0 auto 0.2em auto;
+      line-height: 1.2em;
+      text-align: center;
+      width: 100%;
+      @include box-sizing(border-box);
+
+      @include clearfix;
+
+      label {
+        border-left: 1px solid #555;
+        padding: 0.2em;
+        display: table-cell;
+        width: 50%;
+      }
+
+      strong {
+        padding: 0.2em;
+        display: table-cell;
+        width: 50%;
+      }
+    }*/
+
+    table {
+      border: 1px solid #555;
+      width: 100%;
+      margin-bottom: 0.5em;
+      z-index: 2; position: relative;
+
+      tr {
+        td {
+          text-align: center;
+          width: 50%;
+          padding: 0;
+          border: 1px solid #555;
+          line-height: 1.5em;
+        }
+        td:first-child {
+
+        }
+        td:last-child {
+
+        }
+      }
+    }
+
+    .edit {
+      position: relative;
+      width: 100%;
+      top: -0.5em; left: -0.6em; right: -0.6em; 
+      margin-bottom: -0.5em !important; margin-right: 0px;
+      padding: 0.5em 0.6em;
+      background: $wordEditorBackground;
+      z-index: 1;
+      cursor: pointer;
+
+      input { display: none; }
+
+      table { border: 1px dashed #ccc; }
+
+      .remove {
+        display: block;
+        width: 20px; height: 20px;
+        position: absolute;
+        top: 1px; right: 0;
+        background: url(../images/trash.png) center center no-repeat;
+      }
+
+      &.edit-word {
+        tr td:last-child { 
+          position: relative;
+        }
+        input {
+          display: block;
+          width: 100%;
+          position: absolute; top: -2px; left: 0; right: 0; bottom: 0;
+          font-size: 10pt;
+          line-height: 1.5em;
+          padding: 0;
+          text-align: center;
+          border: 0; @include border-radius(0);
+          @include box-shadow(none);
+          outline: 0;
+          background: $wordEditorBackground;
+        }
+      }
+    }
+}
+
+$p: 0.6em;
+$vp: 0.7em;
+
+#container {
+
+  & > table {
+    width: 100%;
+    & > tbody > tr {
+      td { 
+        padding: $vp*2 0;
+        border-bottom: $border;
+        @include box-sizing(border-box);
+        line-height: 1.6em;
+        vertical-align: top;
+      }
+      td:first-child {
+        padding: $vp 0 $vp $p;
+        width: 28%;
+      }
+      td:nth-child(2) {
+        padding: $vp $p;
+        border-right: $border;
+        border-left: $border;
+        width: 24%;
+
+        @include words;
+
+        table:last-child {
+          margin-bottom: 0;
+        }
+      }
+      & > td:last-child {
+        padding: $p $p $p 0;
+
+        span {
+          display: block;
+          height: 1.6em;
+          border-bottom: 1px solid #555;
+          margin-bottom: 0.5em;
+          @include box-sizing(border-box);
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+/*
+    tr:nth-child(6) {
+      td {
+        border-bottom: 0;
+      }
+    }*/
+
+    tr:last-child {
+      td { 
+        //padding-bottom: 0;
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
+#dictionary {
+  // @include words;
+  // @include clearfix;
+  // margin: 2em 0;
+
+  // h1 {
+  //   font-size: 150%;
+  // }
+
+  // table {
+  //   float: right;
+  //   width: 24%;
+  //   margin-left: 1%;
+  // }
+}
+
+footer {
+  @include clearfix;  
+  margin: 2em 0;
+
+  h1 {
+    font-size: 150%;
+  }
+}
+
+#editor {
+  background: url(../images/bg2.jpg) no-repeat left top;
+  float: right;
+  position: fixed; top: 0; bottom: 0;
+  width: 50%;
+  padding: 1em 1em 1em 5em;
+  color: #222D2B;
+  font-size: 20px;
+  line-height: 140%;
+  @include box-sizing(border-box);
+  @include text-shadow(1px 1px 1px rgba(#fff, 0.5));
+
+  & > p {
+  }
+
+  a { 
+    color: #163B52; 
+    font-weight: bold;
+    &:hover { text-decoration: none; }
+  }
+
+  h2 {
+    font-size: 120%;
+    font-weight: bold;
+    margin: 0.5em 0;
+  }
+
+  #songs {
+
+    button {
+      background: #CFF09E;
+      padding: 0.3em 0.5em;
+      @include border-radius(5px);
+      font-size: 20px;
+      display: inline-block;
+      @include text-shadow(1px 1px rgba(#000, 0.2));
+      margin: 0 0 5px 5px;
+      cursor: pointer;
+
+      border: 2px solid transparent;
+
+      @include transition(all 0.2s);
+
+      &:hover {
+        background: lighten(#CFF09E, 5%);
+      }
+      &.active {
+        //border: 2px solid #849766;
+      }
+    }
+  }
+
+  .fields { 
+
+    display: none;
+
+    fieldset {
+    }
+
+    label {
+    }
+
+    #title {
+      font-size: 15px;
+      background-color: #fff;
+    }
+
+    #song {
+      width: 100%;
+      height: 150px;
+      margin-top: 0.5em;
+      display: block;
+      @include box-sizing(border-box);
+      font-size: 15px;
+      background-color: #fff;
+    }
+  }
+
+  .buttons {
+
+    padding-top: 0.5em;
+
+    button {
+      border: 0;
+      padding: 0;
+      background: transparent;
+      @include border-radius(5px);
+      @include transition(all 0.2s);
+    }
+
+    #new_song {
+      background: #D9EEEC;
+      padding: 4px 7px;
+      font-size: 20px;
+      @include border-radius(7px);
+      @include text-shadow(1px 1px rgba(#fff, 1));
+
+      &:hover {
+        background: lighten(#D9EEEC, 3%);
+      }
+    }
+
+    #back {
+      display: none;
+
+      &:before {
+        display: inline-block;
+        width: 25px; height: 25px;
+        content: ' ';
+        background: url(../images/back.png) no-repeat;
+        position: relative; top: 7px;
+      }
+    }
+
+    #generate {
+      clear: both;
+      float: none;
+      display: none;
+      background: #163B52;      
+      font-size: 20px; color: #fff;
+      @include text-shadow(1px 1px 1px #000);
+      @include border-radius(10px);
+      cursor: pointer;
+
+      &:hover {
+        background: lighten(#163B52, 5%);
+      }
+    }
+
+  }
+
+  #google_attr {
+    border: 1px solid #444;
+    position: absolute;
+    bottom: 1em; left: 92px;
+    width: 140px; height: 32px;
+    background: #fff url(../images/google_attr.png) center center no-repeat;
+    display: inline-block;
+  }
+}
+
+#fork {
+  position: fixed;
+  bottom: 0; right: 0;
+  z-index: 1000;
+  width: 136px; height: 135px;
+  display: inline-block;
+  background: url(../images/fork-me-on-github.png) no-repeat;
+}
+
+@media (min-height: 900px) {
+  #editor { padding: 2em 2em 2em 6em; }
+  #editor h2 { margin: 1em 0; }
+  #song { height: 200px !important; }
+}
+
+@media (max-height: 800px) {
+  #fork { display: none; }
+}
+
+@media print {
+  body, td {
+    background: red;
+  }
+
+  #fork { display: none; }
+  #editor { display: none !important; }
+  #container { 
+    width: 100% !important;
+    margin: 0;
+    float: none;
+  }
+}

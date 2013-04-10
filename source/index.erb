@@ -1,0 +1,72 @@
+---
+title: מחולל דפי עבודה
+---
+
+<div id="container"></div>
+
+<form id="editor">
+
+  <div class="wrapper">
+    <h1>מחולל דפי עבודה</h1>
+
+    <p>
+      המחולל מייצר דפי עבודה לתלמידים בפורמט שניתן לראות <a href="sample.html" target="_blank">בדוגמה</a>. 
+      בהנתן שיר המחולל מתרגם את מילותיו באמצעות Google Translate ומייצר את הדף הראשוני. 
+      לאחר מכן ניתן לערוך את התרגומים ולמחוק מילים שאינן רלוונטיות. 
+      כשהדף מוכן - פשוט הדפיסו עמוד זה (Ctrl+P) וחלקו לתלמידים!
+    </p>
+
+    <h2>בחרו שיר מהרשימה או ייצרו אחד בעצמכם:</h2>
+
+    <section id="songs"></section>
+
+    <div class="fields">
+
+      <fieldset>
+        <label for="title">כותרת:</label>
+        <input id="title" />
+      </fieldset>
+
+      <fieldset>
+        <textarea id="song"></textarea>
+      </fieldset>
+
+    </div><!-- fields -->
+
+    <div class="buttons">
+      <button id="back">חזרה לרשימה</button>
+      <button id="new_song">שיר חדש</button>
+      <input type="submit" id="generate" value="ייצר את דף העבודה" />
+    </div>
+
+    <a href="http://translate.google.com/" id="google_attr" target="_blank"></a>
+
+  </div><!-- wrapper -->
+</form>
+
+<a href="" id="fork"></a>
+
+<p id="downloadify"></p>
+
+<script src="javascripts/libs/base64.js"></script>
+<script src="javascripts/jspdf.min.js"></script>
+<script src="javascripts/libs/downloadify/js/swfobject.js"></script>
+<script src="javascripts/libs/downloadify/js/downloadify.min.js"></script>
+<script src="javascripts/jspdf.plugin.from_html.js"></script>
+<%= javascript_include_tag  "http://code.jquery.com/jquery-1.9.1.min.js" %>
+<script src="javascripts/smarty/smarty.js"></script>
+<script src="javascripts/smarty/utils.js"></script>
+<script src="javascripts/word_editor.js"></script>
+<script src="javascripts/app.js"></script>
+<script src="javascripts/editor.js"></script>
+
+<script>
+
+  var editor = new Editor({
+    'container': $('#editor'),
+    'songs': <%= data.songs.map{ |song| 
+                      { :key => song[0], :title => song[1].title} 
+                  }.to_json %>
+  });
+
+</script>
