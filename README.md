@@ -1,7 +1,7 @@
 Work Sheet Generator
 ====================
 
-This generator includes an editor the allows you to create a work sheet for kids based on an existing English song. For example, filling out the form with the title and lyrics of the song 'Old MacDonald' will generate [this sample sheet](http://rotemharel.com/s/work-sheet-generator/sample.html).
+This generator includes an editor the allows you to create a work sheet for kids based on an existing English song. For example, filling out the form with the title and lyrics of the song 'Old MacDonald' will generate [this sample sheet](http://rotemharel.com/s/מחולל-דפי-עבודה/sample.html).
 
 Requirements
 ------------
